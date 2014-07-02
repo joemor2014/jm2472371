@@ -7,6 +7,7 @@
 
 //System Libraries
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 //User Libraries
@@ -19,7 +20,7 @@ using namespace std;
 int main(int argc, char** argv) {
    
    //Declaring variables
-   int mileage, gallons, miles;
+   float mileage, gallons, miles;
  
    
    cout<<"This program calculates your car's gas mileage."<< endl;
@@ -32,7 +33,8 @@ int main(int argc, char** argv) {
    mileage = miles / gallons;
    
    //Output results
-   cout<< "Your car's mileage is "<<mileage<<" ."<<endl;
+   cout<<setprecision(2)<<fixed;
+   cout<< "Your car's mileage is "<<mileage<<endl;
    
     return 0;
 }
