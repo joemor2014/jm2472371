@@ -8,10 +8,13 @@
 #include <iostream>
 
 using namespace std;
+// User Libraries
 
-/*
- * 
- */
+// Global Constants
+
+//Function Prototype
+
+//Execution Begins Here!
 int main(int argc, char** argv) {
     //Declaring Variables
     int trdA, trdB, trdC;

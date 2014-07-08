@@ -4,14 +4,18 @@
  *
  * Created on July 7, 2014, 12:15 PM
  */
-
+//System Library
 #include <iostream>
 
 using namespace std;
 
-/*
- * 
- */
+//User Libraries
+
+//Global Constants
+
+//Function Prototype
+
+//Execution Begins Here!
 int main(int argc, char** argv) {
 
     // Declaring Variables

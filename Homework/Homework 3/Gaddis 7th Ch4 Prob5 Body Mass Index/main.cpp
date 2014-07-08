@@ -4,15 +4,19 @@
  *
  * Created on July 7, 2014, 11:12 AM
  */
-
+//System Library
 #include <iostream>
 #include <iomanip>
 
 using namespace std;
 
-/*
- * 
- */
+//User Libraries
+
+//Global Constants
+
+//Function Prototype
+
+//Execution Begins Here!
 int main(int argc, char** argv) {
 //Declaring variables
     float fifW, fifA = 703, fifH, H2;
