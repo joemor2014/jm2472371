@@ -25,10 +25,10 @@ int main(int argc, char** argv) {
     //Description of Program and input from user
     cout<<"This program will simulate a coin toss, please enter how many times you wish the coin to be tossed ";
     cin>>coT;
-    
+    //Outputting results
     cot(coT);
     
-    //Outputting results
+    
     
 
     return 0;
