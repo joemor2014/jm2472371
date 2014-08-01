@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     char carA[10][COL5];
     
     //open file
-    inputFile.open("input.txt");
+    inputFile.open("input.dat");
     
     //Write information to array
     for (int i=0;i<10;i++)
@@ -48,24 +48,32 @@ int main(int argc, char** argv) {
 void sortAr(char carA[][COL5]) { 
     //Declare Variables
     bool swap;    char temp;
-   //Sorting loops
+    
+   //Sorting loops    
     do 
-   {
-       swap = false;
-       for (int i=0;i<10;i++)
        {
-            for (int count = 0; count < (15 - 1); count++)      
-            { 
-                if (carA[i][count] > carA[i][count + 1])
+        
+           swap = false;
+           for (int i=0;i<10;i++)
+           {
+               int q=0;
+                while (carA[i][q]==carA[i+1][q])
                 {
-                    temp = carA[count];  
-                    carA[count] = carA[count + 1];           
-                    carA[count + 1] = temp; 
-                    swap = true;         
+                    q++;
                 }
-            }
-       }
-   } while (swap); 
+                if (carA[i][q]<carA[i+1][q]){
+                for (int j=0;j<(15 - 1);j++)      
+                {   
+                    temp = carA[i][j];  
+                    carA[i][j] = carA[i + 1][j];           
+                    carA[i + 1][j] = temp; 
+                    swap = true;         
+                    }
+                }
+           }
+           
+       } while (swap);
+   
    //Calling function to print Array
     prntA(carA);
 }
@@ -79,5 +87,6 @@ void prntA(char carA[][COL5]){
         }
         cout<<endl;
     }
+    cout<<endl;
 }
 
