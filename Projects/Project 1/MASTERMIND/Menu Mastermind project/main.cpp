@@ -20,6 +20,7 @@ using namespace std;
 
 //Function Prototype
 void intro(void);
+int shardl(int);
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Description of the program
@@ -382,6 +383,18 @@ void intro (){
         cout<<"select option 3. Have a great time!"<<endl;
         cout<<"Now please choose which level you want"<<endl;
         cout<<""<<endl;
+}
+int shardl(int)
+{
+    //Declaring Variables
+    const int arr2=4;
+    int rad2[arr2];
+    
+    //Setting loop for random numbers 
+    for (int i=0;i<arr2;i++)
+    {
+        rad2[i]=rand()%10;//Filling array with random numbers
+    }
 }
 
 
