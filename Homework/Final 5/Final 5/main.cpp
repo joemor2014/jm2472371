@@ -62,7 +62,7 @@ void sortAr(char carA[][COL5]) {
                     q++;
                 }
                 if (carA[i][q]<carA[i+1][q]){
-                for (int j=0;j<(15 - 1);j++)      
+                for (int j=0;j<15;j++)      
                 {   
                     temp = carA[i][j];  
                     carA[i][j] = carA[i + 1][j];           
