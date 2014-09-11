@@ -28,8 +28,24 @@ int main(int argc, char** argv) {
     int numb6[numba];//array with 200 elements
     int count6=0; // loop counter variable
     int sumt;
+    string inpfN;
+    bool A=true;
     
-    inputFile.open("NumberA.txt");//Open file 
+    do{
+    //Have User input File's name
+    A=true;
+    cout<<"Please enter the name of the file: ";
+    cin>>inpfN;
+    
+    if (inpfN!="NumberA.txt")
+    {
+        cout<<"Opening failed"<<endl;
+        A=false;
+    }
+    } while (A==false);
+    
+       
+    inputFile.open(string(inpfN).c_str());//Open file 
     
     //Read file data and write them into the array. After this loop executes the count variable
     //will hold the number of values that were stored in the array
